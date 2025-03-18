@@ -42,10 +42,11 @@ public class Village {
 	}
 
 	public void afficherVillageois() {
-		System.out.println("Dans le village \"" + getNom() + "\" du chef " + getChef() + " vivent les légendaires gaulois :");
+		System.out.println(
+				"Dans le village \"" + getNom() + "\" du chef " + getChef() + " vivent les légendaires gaulois :");
 		for (int i = 1; i <= nbVillageois; i++) {
 			System.out.println("- " + trouverVillageois(i));
-			
+
 		}
 	}
 
@@ -63,7 +64,7 @@ public class Village {
 		System.out.println(gaulois);
 
 		village.afficherVillageois();
-		
+
 		Gaulois obelix = new Gaulois("Obélix", 25);
 		village.ajouterVillageois(obelix);
 		village.afficherVillageois();
